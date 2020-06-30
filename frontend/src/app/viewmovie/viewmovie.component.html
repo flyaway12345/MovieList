@@ -1,0 +1,32 @@
+<!-- <div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Recommended</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{movie.id}}</td>
+        <td>{{movie.title}}</td>
+        <td>{{movie.description}}</td>
+        <td>{{movie.recommended}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button type="submit" class="btn btn-primary" (click)="goBackToList()">Go Back</button>
+</div> -->
+<div class="container">
+  <div class="row">
+    <h1>{{movie.title}}</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <img src="{{movie.imgURL}}" alt="">
+    </div>
+  </div>
+</div>

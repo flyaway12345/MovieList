@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Movie List</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Recommended</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let movie of movies">
+        <td>{{movie.id}}</td>
+        <td>{{movie.title}}</td>
+        <td>{{movie.description}}</td>
+        <td>{{movie.recommended}}</td>
+        <!-- Todo make buttons clickable -->
+        <td><button type="button" class="btn btn-primary" (click)="goToEditMovie(movie.id)" >Edit</button></td>
+        <td><button type="button" class="btn btn-warning"(click)="goToViewMovie(movie.id)">View</button></td>
+        <td><button type="button" class="btn btn-danger" (click)="deleteMovie(movie.id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <td><button type="button" class="btn btn-success" (click)="goToAddMovie()">Add a Movie</button></td>
+</div>

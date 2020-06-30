@@ -1,0 +1,25 @@
+<div class="container">
+  <form (ngSubmit)="editMovieButton()">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" required [(ngModel)]="movie.title" name="title" >
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input type="text" class="form-control" required [(ngModel)]="movie.description" name="description" >
+    </div>
+
+    <div class="form-group">
+      <label for="recommended">Recommended</label>
+      <input type="text" class="form-control" required [(ngModel)]="movie.recommended" name="recommended" >
+    </div>
+    
+    <div class="form-group">
+      <label for="recommended">Link To Image</label>
+      <input type="text" class="form-control" required [(ngModel)]="movie.imgURL" name="imgURL" >
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+    <button type="submit" class="btn btn-primary" (click)="goBackToList()">Go Back</button>
+  </form>
+  </div>
